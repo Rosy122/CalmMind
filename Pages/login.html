@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CalmMind</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Here you can add validation or API call for login
+
+            // Redirect to home page after "login"
+            window.location.href = 'home.html'; // Change to your home page URL
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="login-box">
+                <h1>Login</h1>
+                <form onsubmit="handleLogin(event)">
+                    <div class="textbox">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <button class="btn" type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="signUp.html">Create Account</a></p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

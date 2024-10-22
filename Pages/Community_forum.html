@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <p>Join the conversation! Share your experiences, ask questions, and connect with others.</p>
+        </header>
+<br><br><br><br><br><br><br><br>
+        <!-- Discussion Threads Section -->
+        <section class="forum-threads">
+            <h2>Recent Discussions</h2>
+
+            <!-- Thread 1 -->
+            <div class="forum-thread">
+                <h3>How do you stay consistent with daily meditation?</h3>
+                <p>Posted by <strong>User123</strong> on Oct 15, 2024</p>
+                <p>Does anyone have tips on how to make meditation a daily habit? I keep getting off track.</p>
+                <button class="like-button">👍 Like (<span class="like-count">0</span>)</button>
+                <div class="comments-section">
+                    <h4>Comments:</h4>
+                    <div class="comments"></div>
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post Comment</button>
+                </div>
+            </div>
+
+            <!-- Thread 2 -->
+            <div class="forum-thread">
+                <h3>Best time of the day to meditate?</h3>
+                <p>Posted by <strong>MeditatorGuru</strong> on Oct 17, 2024</p>
+                <p>I usually meditate in the evening, but wondering if anyone has seen better results meditating in the morning?</p>
+                <button class="like-button">👍 Like (<span class="like-count">0</span>)</button>
+                <div class="comments-section">
+                    <h4>Comments:</h4>
+                    <div class="comments"></div>
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post Comment</button>
+                </div>
+            </div>
+
+            <!-- New Thread 3 -->
+            <div class="forum-thread">
+                <h3>What guided meditations do you recommend?</h3>
+                <p>Posted by <strong>PeaceSeeker</strong> on Oct 18, 2024</p>
+                <p>I’m looking for new guided meditation resources. Any suggestions?</p>
+                <button class="like-button">👍 Like (<span class="like-count">0</span>)</button>
+                <div class="comments-section">
+                    <h4>Comments:</h4>
+                    <div class="comments"></div>
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <button class="post-comment">Post Comment</button>
+                </div>
+            </div>
+
+            
+
+        <!-- Create New Thread Section -->
+        <section class="new-thread">
+            <h2>Start a New Discussion</h2>
+            <form action="#" method="POST">
+                <label for="thread-title">Thread Title:</label>
+                <input type="text" id="thread-title" name="thread-title" placeholder="Enter your thread title here..." required>
+
+                <label for="thread-content">Your Message:</label>
+                <textarea id="thread-content" name="thread-content" rows="5" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="post-button">Post Thread</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // JavaScript for handling likes and comments
+        document.querySelectorAll('.like-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const likeCount = button.querySelector('.like-count');
+                likeCount.textContent = parseInt(likeCount.textContent) + 1; // Increment like count
+            });
+        });
+
+        document.querySelectorAll('.post-comment').forEach(button => {
+            button.addEventListener('click', function() {
+                const commentSection = this.closest('.comments-section');
+                const textarea = commentSection.querySelector('textarea');
+                const commentsDiv = commentSection.querySelector('.comments');
+
+                if (textarea.value.trim()) {
+                    const newComment = document.createElement('p');
+                    newComment.textContent = textarea.value;
+                    commentsDiv.appendChild(newComment);
+                    textarea.value = ''; // Clear the textarea
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmMind</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking to your stylesheet -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="images/Capture.PNG" alt="CalmMind Logo" class="logo">
+            <h1>CalmMind</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Pages/about.html">About us</a></li>
+                <li><a href="Pages/feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Cards and Buttons -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="card">
+                <img src="images/medicine.png" alt="Stress Less Icon" class="icon">
+                <h2>Stress Less</h2>
+                <p>Get in-the-moment relief for stress and anxiety so you can get back to living.</p>
+            </div>
+            <div class="card">
+                <img src="images/leaf.png" alt="Mindfulness Icon" class="icon">
+                <h2>Live mindfully</h2>
+                <p>Navigate life's ups and downs with resilience, confidence, and guided support.</p>
+            </div>
+        </div>
+
+        <!-- Buttons for Login and Signup -->
+        <div class="buttons">
+            <button class="btn login-btn" id="loginBtn">LOGIN</button>
+            
+            <button class="btn signup-btn" id="signupBtn">SIGN UP</button>
+        </div>
+    </section>
+
+    <!-- JavaScript for Redirecting to Different Pages -->
+    <script>
+        // JavaScript to handle button clicks and redirect to login and signup pages
+
+        // Get the button elements by their IDs
+        const loginBtn = document.getElementById('loginBtn');
+        const signupBtn = document.getElementById('signupBtn');
+
+        // Add click event listeners to the buttons to redirect to different pages
+        loginBtn.addEventListener('click', function() {
+            // Redirect to the login page
+            window.location.href = 'Pages/login.html'; // Make sure to create the login.html file
+        });
+
+        signupBtn.addEventListener('click', function() {
+            // Redirect to the signup page
+            window.location.href = 'Pages/signUp.html'; // Make sure to create the signup.html file
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1091 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b0e1ac;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #3a6f3a;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a6f3a;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: url('images/Nature.webp') no-repeat center center/cover;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+    /* margin-top: 50px; */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2a522a;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #c1e5c1;
+    color: #3a6f3a;
+}
+
+.signup-btn {
+    background-color: #76d776;
+    color: white;
+}
+
+
+/* Login Page Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E8F5E9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #A5D6A7;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textbox input:focus {
+    border-color: #66BB6A;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+    transition: background-color 0.3s ease;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #1B5E20;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .textbox input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A5D6A7;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E7D32;
+    text-decoration: none;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    color: #2E7D32;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #388E3C;
+}
+
+.navbar nav a.active {
+    color: #388E3C;
+}
+
+/* About section */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px; */
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #2E7D32;
+    margin: 0;
+    
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Feedback section */
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px; */
+}
+
+.feedback-section h1 {
+    font-size: 36px;
+    color: #2E7D32;
+    margin: 0;
+    /* padding-top: 0; */
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #A5D6A7;
+    border-radius: 5px;
+    outline: none;
+}
+
+.feedback-form input:focus, .feedback-form textarea:focus {
+    border-color: #66BB6A;
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #A5D6A7;
+    color: #2E7D32;
+    margin-top: 50px;
+}
+/* Home */
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0e9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #82c09a;
+}
+
+header nav ul li a:hover {
+    background-color: #6fa482;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.icon-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 180px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+    transform: scale(1.05);
+}
+
+.icon-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.icon-card p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Illustration Image */
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background-color: #82c09a;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+
+/* Guided meditation */
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #388E3C;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: transparent;
+    
+    
+}
+header h1 {
+    font-size: 15px; /* You can adjust this size to whatever you'd like */
+    font-weight: normal; /* Optional: Adjust weight if you want it lighter */
+    color: #333; /* Optional: Change color if needed */
+}
+
+
+h1 {
+    font-size: 10px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Meditation Cards Grid */
+.meditation-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Individual Meditation Card Styling */
+.meditation-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: calc(33.333% - 20px); /* Three cards per row */
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.meditation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.meditation-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #4CAF50;
+}
+
+/* Meditation Card Title */
+.meditation-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Meditation Session Duration */
+.meditation-card p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Play Button */
+.play-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #388E3C;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .meditation-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meditation-card {
+        width: 80%;
+    }
+}
+
+/* Additional Styling to Add More Cards */
+.meditation-card:nth-child(4n+1) {
+    background-color: #f0f7f1;
+}
+
+.meditation-card:nth-child(4n+2) {
+    background-color: #f5f5f5;
+}
+
+.meditation-card:nth-child(4n+3) {
+    background-color: #fff5f2;
+}
+
+/* Adding Card Flip Animation */
+.meditation-card {
+    perspective: 1000px;
+    position: relative;
+}
+
+.meditation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.meditation-card:hover::before {
+    opacity: 1;
+}
+
+
+
+/* Tracking Cards Styling */
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #388E3C;
+}
+
+.progress-overview {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.progress-overview h2 {
+    color: #388E3C;
+}
+
+.tracking-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 20px; /* Add padding to ensure the content is well spaced */
+    max-width: 1000px; /* Keep the cards within a reasonable width */
+    margin: 0 auto; /* Center the content */
+}
+
+.tracking-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33% - 40px); /* Ensure 3 cards fit in one row with space */
+    max-width: 300px; /* Ensure the cards don't get too large */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tracking-card:hover {
+    transform: scale(1.05);
+}
+
+.tracking-card h3 {
+    font-size: 20px;
+    color: #388E3C;
+}
+
+.status-completed {
+    color: #66bb6a;
+    font-weight: bold;
+}
+
+.track-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.track-button:hover {
+    background-color: #388E3C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    margin: 15px 0;
+}
+
+.progress-fill {
+    background-color: #66bb6a;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.main-background {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 300px; /* Set a fixed width or percentage for the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside the container */
+    width: 100%; /* Ensure it takes the full width of the parent */
+    max-width: 1200px; /* Make sure it doesn't exceed 1200px */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+@media (max-width: 768px) {
+    .tracking-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tracking-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .main-background {
+        width: 100%; /* Ensure the background takes full width on small screens */
+    }
+}
+
+
+
+/* Forum Threads Section */
+/* General Forum Thread Styling */
+/* General Body and Container Styling */
+/* General Body and Container Styling */
+body {
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Optional: Light background color */
+}
+
+.container {
+    width: 90%; /* Set to a percentage to occupy more space */
+    max-width: 1200px; /* Maximum width to avoid stretching too much on large screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing inside the container */
+    background-color: #ffffff; /* Ensure the container is white */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for aesthetics */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #4CAF50;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Discussion Threads Section */
+
+
+.forum-threads {
+    margin-top: 20px;
+}
+
+.forum-thread {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forum-thread:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.forum-thread h3 {
+    font-size: 18px;
+    color: #388E3C;
+}
+
+.forum-thread p {
+    color: #555;
+}
+
+.forum-thread a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.forum-thread a:hover {
+    text-decoration: underline;
+}
+
+/* New Thread Section Styling */
+.new-thread {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-thread h2 {
+    color: #388E3C;
+}
+
+.new-thread input,
+.new-thread textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.new-thread .post-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-thread .post-button:hover {
+    background-color: #388E3C;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically on small screens */
+    }
+
+    .container {
+        width: 95%; /* Slightly wider on smaller screens */
+    }
+}
+
+
+
+/* Live Session Section */
+/* General Body Styling */
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #388E3C;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container styling */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #388E3C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Live Session Section */
+.live-session {
+    margin-bottom: 30px;
+}
+
+.session-details p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Session Table */
+.session-schedule {
+    margin-top: 30px;
+}
+
+.session-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.session-table th,
+.session-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.session-table th {
+    background-color: #388E3C;
+    color: white;
+}
+
+.session-table td {
+    color: #555;
+}
+
+.join-button {
+    background-color: #388E3C;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.join-button:hover {
+    background-color: #2d7330;
+}
+
+/* Table improvements */
+.session-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+Button focus
+button:focus {
+    outline: none;
+    box-shadow: 0 0 3px #388E3C;
+}
